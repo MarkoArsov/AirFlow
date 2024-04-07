@@ -1,0 +1,29 @@
+[2024-03-24T19:35:54.300+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs/dag_id=welcome_dag/run_id=manual__2024-03-24T19:35:49.546730+00:00/task_id=print_welcome permission to 509
+[2024-03-24T19:35:54.302+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs/dag_id=welcome_dag/run_id=manual__2024-03-24T19:35:49.546730+00:00 permission to 509
+[2024-03-24T19:35:54.304+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs/dag_id=welcome_dag permission to 509
+[2024-03-24T19:35:54.307+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs permission to 509
+[2024-03-24T19:35:54.308+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow permission to 509
+[2024-03-24T19:35:54.376+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs/dag_id=welcome_dag/run_id=manual__2024-03-24T19:35:49.546730+00:00/task_id=print_welcome permission to 509
+[2024-03-24T19:35:54.379+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs/dag_id=welcome_dag/run_id=manual__2024-03-24T19:35:49.546730+00:00 permission to 509
+[2024-03-24T19:35:54.382+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs/dag_id=welcome_dag permission to 509
+[2024-03-24T19:35:54.384+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs permission to 509
+[2024-03-24T19:35:54.386+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow permission to 509
+[2024-03-24T19:35:54.433+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: welcome_dag.print_welcome manual__2024-03-24T19:35:49.546730+00:00 [queued]>
+[2024-03-24T19:35:54.445+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: welcome_dag.print_welcome manual__2024-03-24T19:35:49.546730+00:00 [queued]>
+[2024-03-24T19:35:54.446+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-03-24T19:35:54.492+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): print_welcome> on 2024-03-24 19:35:49.546730+00:00
+[2024-03-24T19:35:54.497+0000] {standard_task_runner.py:60} INFO - Started process 80 to run task
+[2024-03-24T19:35:54.500+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'welcome_dag', 'print_welcome', 'manual__2024-03-24T19:35:49.546730+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/test-dag.py', '--cfg-path', '/tmp/tmp5tff7tvq']
+[2024-03-24T19:35:54.502+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask print_welcome
+[2024-03-24T19:35:54.588+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs/dag_id=welcome_dag/run_id=manual__2024-03-24T19:35:49.546730+00:00/task_id=print_welcome permission to 509
+[2024-03-24T19:35:54.590+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs/dag_id=welcome_dag/run_id=manual__2024-03-24T19:35:49.546730+00:00 permission to 509
+[2024-03-24T19:35:54.593+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs/dag_id=welcome_dag permission to 509
+[2024-03-24T19:35:54.594+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs permission to 509
+[2024-03-24T19:35:54.596+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow permission to 509
+[2024-03-24T19:35:54.604+0000] {task_command.py:423} INFO - Running <TaskInstance: welcome_dag.print_welcome manual__2024-03-24T19:35:49.546730+00:00 [running]> on host 7a7ba416e5f5
+[2024-03-24T19:35:54.718+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='welcome_dag' AIRFLOW_CTX_TASK_ID='print_welcome' AIRFLOW_CTX_EXECUTION_DATE='2024-03-24T19:35:49.546730+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-24T19:35:49.546730+00:00'
+[2024-03-24T19:35:54.719+0000] {logging_mixin.py:188} INFO - Welcome to Airflow!
+[2024-03-24T19:35:54.720+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-03-24T19:35:54.730+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=welcome_dag, task_id=print_welcome, execution_date=20240324T193549, start_date=20240324T193554, end_date=20240324T193554
+[2024-03-24T19:35:54.794+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-24T19:35:54.842+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

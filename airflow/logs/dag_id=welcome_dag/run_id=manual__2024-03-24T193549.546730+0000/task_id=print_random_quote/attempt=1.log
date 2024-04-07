@@ -1,0 +1,28 @@
+[2024-03-24T19:36:01.392+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs/dag_id=welcome_dag/run_id=manual__2024-03-24T19:35:49.546730+00:00/task_id=print_random_quote permission to 509
+[2024-03-24T19:36:01.395+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs/dag_id=welcome_dag/run_id=manual__2024-03-24T19:35:49.546730+00:00 permission to 509
+[2024-03-24T19:36:01.399+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs/dag_id=welcome_dag permission to 509
+[2024-03-24T19:36:01.402+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs permission to 509
+[2024-03-24T19:36:01.470+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs/dag_id=welcome_dag/run_id=manual__2024-03-24T19:35:49.546730+00:00/task_id=print_random_quote permission to 509
+[2024-03-24T19:36:01.473+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs/dag_id=welcome_dag/run_id=manual__2024-03-24T19:35:49.546730+00:00 permission to 509
+[2024-03-24T19:36:01.475+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs/dag_id=welcome_dag permission to 509
+[2024-03-24T19:36:01.477+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs permission to 509
+[2024-03-24T19:36:01.479+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow permission to 509
+[2024-03-24T19:36:01.519+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: welcome_dag.print_random_quote manual__2024-03-24T19:35:49.546730+00:00 [queued]>
+[2024-03-24T19:36:01.534+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: welcome_dag.print_random_quote manual__2024-03-24T19:35:49.546730+00:00 [queued]>
+[2024-03-24T19:36:01.535+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-03-24T19:36:01.583+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): print_random_quote> on 2024-03-24 19:35:49.546730+00:00
+[2024-03-24T19:36:01.587+0000] {standard_task_runner.py:60} INFO - Started process 96 to run task
+[2024-03-24T19:36:01.590+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'welcome_dag', 'print_random_quote', 'manual__2024-03-24T19:35:49.546730+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/test-dag.py', '--cfg-path', '/tmp/tmpk6n1rje3']
+[2024-03-24T19:36:01.592+0000] {standard_task_runner.py:88} INFO - Job 5: Subtask print_random_quote
+[2024-03-24T19:36:01.685+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs/dag_id=welcome_dag/run_id=manual__2024-03-24T19:35:49.546730+00:00/task_id=print_random_quote permission to 509
+[2024-03-24T19:36:01.688+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs/dag_id=welcome_dag/run_id=manual__2024-03-24T19:35:49.546730+00:00 permission to 509
+[2024-03-24T19:36:01.692+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs/dag_id=welcome_dag permission to 509
+[2024-03-24T19:36:01.694+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow/logs permission to 509
+[2024-03-24T19:36:01.697+0000] {logging_mixin.py:188} INFO - Changing /opt/airflow permission to 509
+[2024-03-24T19:36:01.707+0000] {task_command.py:423} INFO - Running <TaskInstance: welcome_dag.print_random_quote manual__2024-03-24T19:35:49.546730+00:00 [running]> on host 7a7ba416e5f5
+[2024-03-24T19:36:01.833+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='welcome_dag' AIRFLOW_CTX_TASK_ID='print_random_quote' AIRFLOW_CTX_EXECUTION_DATE='2024-03-24T19:35:49.546730+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-24T19:35:49.546730+00:00'
+[2024-03-24T19:36:02.422+0000] {logging_mixin.py:188} INFO - Quote of the day: "It's so simple to be wise. Just think of something stupid to say and then don't say it."
+[2024-03-24T19:36:02.423+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-03-24T19:36:02.435+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=welcome_dag, task_id=print_random_quote, execution_date=20240324T193549, start_date=20240324T193601, end_date=20240324T193602
+[2024-03-24T19:36:02.525+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-24T19:36:02.546+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
