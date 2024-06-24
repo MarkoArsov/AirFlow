@@ -7,3 +7,7 @@ RUN apt-get update && \
     apt-get clean
 
 USER airflow
+
+COPY --chmod=+x entrypoint.sh /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]

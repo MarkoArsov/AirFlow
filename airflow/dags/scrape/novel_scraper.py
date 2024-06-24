@@ -5,6 +5,8 @@ import re
 def scrape_page(id):
     obj = {}
     url = 'https://www.novelestate.com/estate_view.html?id=' + id
+    obj['Линк'] = url
+    obj['Шифра'] = id
     response = requests.get(url)
     raw_html = response.text
     html = BeautifulSoup(raw_html, "html.parser")
@@ -32,7 +34,7 @@ def scrape_page(id):
       key = prop.findChildren(recursive=False)[0].text
       value = prop.findChildren(recursive=False)[1].text
       images = prop.findChildren(recursive=False)[1].find_all("img")
-      if len(images) > 0: 
+      if len(images) > 0:
         value = True
       obj[key] = value
 
