@@ -23,7 +23,9 @@ def clean_square(**kwargs):
     for column in df.columns:
         df[column] = df[column].apply(remove_substrings)
 
-    df = df.drop(columns=['Да', 'Не', '1', '4'])
+    df = df.drop(columns=['Да', 'Не', '1', '4', 'Достапно од', 'Камин', 'Камери',
+                          'Обезбедување', 'Домофон', 'Наместен', 'Тип на прозорци'])
+
     df.rename(columns={
         'Линк': 'link',
         'Шифра': 'code',
@@ -33,8 +35,8 @@ def clean_square(**kwargs):
         'Населба': 'municipality',
         'Локација': 'location',
         'Површина': 'surfacearea',
-        'Број на соби': 'numberofrooms',
-        'Број на спални': 'numberofsleepingroms',
+        'Структура': 'numberofrooms',
+        'Спални соби': 'numberofsleepingroms',
         'Кат': 'floornumber',
         'Ентериер': 'interior',
         'Број на купатила': 'numberofbathrooms',
@@ -49,25 +51,18 @@ def clean_square(**kwargs):
         'Лифт': 'elevator',
         'Нова Зграда': 'newbuilding',
         'Краток престој': 'shortstay',
-        'Греење на струја': 'electricheating',
+        'Греење': 'electricheating',
         'Ориентација': 'orientation',
         'Кујнски елементи': 'kitchenappliances',
         'Година на градба': 'yearofconstruction',
         'Реновиран': 'renovated',
+        'Нов': 'renovated',
         'Паркинг': 'parking',
         'Подрум': 'basement',
         'Интернет': 'internet',
         'Кабловска ТВ': 'cabletv',
         'Студенти': 'students',
-        'Структура': 'structure',
-        'Наместен': 'setup',
-        'Достапно од': 'available from',
-        'Спални соби': 'numberofsleepingroms',
-        'Греење': 'heating',
-        'Обезбедување': 'security',
-        'Камери': 'cameras',
-        'Камин': 'fireplace',
-        'Нов': 'new',
     }, inplace=True)
+
 
     kwargs['ti'].xcom_push(key='cleaned_data', value=df.to_dict())
